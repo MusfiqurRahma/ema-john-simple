@@ -9,7 +9,7 @@ const Cart = (props) => {
         total = total + product.price;
     }
     const shipping = 15;
-    const tax = (total + shipping) * 10;
+    const tax = (total + shipping) * 0.10;
     const grandTotal = total + shipping + tax;
 
     
@@ -24,8 +24,8 @@ const Cart = (props) => {
             <p>Tax: {tax.toFixed(2)}</p>
             <p>Price: {total.toFixed(2)}</p>
             <hr />
-            <h4>Order Total: {grandTotal.toFixed(2)}</h4>
-            <button className='btn-review'>Riview Your Order</button>
+            <h4>Grand Total Price: {grandTotal.toFixed(2)}</h4>
+            <button className='btn-review'>Review Your Order</button>
            </div>
 
         </div>
