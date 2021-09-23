@@ -1,0 +1,14 @@
+.cart-container{
+    text-align: center;
+}
+.cart-items{
+text-align: left;
+}
+.btn-review{
+    background-color: goldenrod;
+    height: 25px;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
