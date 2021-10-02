@@ -3,7 +3,7 @@ import './Cart.css'
 
 const Cart = (props) => {
     const { cart } = props;
-
+    console.log(props);
     let totalQuantity = 0;
     let total = 0;
     for (const product of cart) {
@@ -30,7 +30,7 @@ const Cart = (props) => {
             <p>Price: ${total.toFixed(2)}</p>
             <hr />
             <h4>Grand Total Price: ${grandTotal.toFixed(2)}</h4>
-            <button className='btn-review'>Review Your Order</button>
+                {props.children}
            </div>
 
         </div>
